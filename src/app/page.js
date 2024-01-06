@@ -1,11 +1,13 @@
+"use client"
 import Image from 'next/image'
+import TabBar from './components/tabBar'
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center w-screen bg-no-repeat" 
-    style={{
-       backgroundImage: "url(/images/image.png)", height: "900px", backgroundSize: "cover"
-    }}>
+    <main className="flex flex-col justify-center items-center w-screen bg-no-repeat"
+      style={{
+        backgroundImage: "url(/images/image.png)", height: "900px", backgroundSize: "cover"
+      }}>
       <article className=''>
         <section className='flex flex-col justify-center items-center'>
           <h1 className="font-main text-4xl font-light text-darkPrimary">Montreal</h1>
@@ -15,8 +17,7 @@ export default function Home() {
         </section>
         <Image src="/images/weather-house.png" width={390} height={390} alt="Picture of a cute house" />
       </article>
-
-
+      <TabBar />
     </main>
 
 
